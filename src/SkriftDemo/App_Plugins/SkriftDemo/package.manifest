@@ -1,0 +1,7 @@
+﻿{
+	"javascript": [
+        "~/App_Plugins/SkriftDemo/Controllers/EditAnimal.js",
+        "~/App_Plugins/SkriftDemo/Controllers/EditPokemon.js",
+        "~/App_Plugins/SkriftDemo/Controllers/EvolvePokemon.js"
+    ]
+}

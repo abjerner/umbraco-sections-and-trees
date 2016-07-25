@@ -1,0 +1,61 @@
+﻿<div ng-controller="SkriftDemo.EditAnimal.Controller">
+    <div class="umb-panel-header">
+        <div class="umb-panel-header-content-wrapper">
+            <div class="umb-panel-header-content">
+                <div class="umb-panel-header-left-side">
+                    <div class="umb-panel-header-title-wrapper">
+                        <div class="umb-panel-header-name">{{animal.name}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="umb-editor-container umb-panel-body umb-scrollable row-fluid" ng-show="animal">
+        <div class="umb-pane">
+            <div class="form-horizontal">
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">Id</label>
+                            <div class="umb-property-editor">{{animal.id}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">Status</label>
+                            <div class="umb-property-editor">{{animal.status}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">Last seen</label>
+                            <div class="umb-property-editor">{{animal.lastSeen}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">Twitter</label>
+                            <div class="umb-property-editor">@{{animal.twitter}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">Image</label>
+                            <div class="umb-property-editor">
+                                <img ng-src="{{animal.image}}" alt="" width="150" height="150" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

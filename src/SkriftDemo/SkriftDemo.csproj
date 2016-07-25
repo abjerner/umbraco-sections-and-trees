@@ -295,6 +295,13 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="App_Plugins\SkriftDemo\BackOffice\Animals\Edit.html" />
+    <Content Include="App_Plugins\SkriftDemo\BackOffice\Pokemon\Edit.html" />
+    <Content Include="App_Plugins\SkriftDemo\BackOffice\Pokemon\Evolve.html" />
+    <Content Include="App_Plugins\SkriftDemo\Controllers\EditAnimal.js" />
+    <Content Include="App_Plugins\SkriftDemo\Controllers\EditPokemon.js" />
+    <Content Include="App_Plugins\SkriftDemo\Controllers\EvolvePokemon.js" />
+    <Content Include="App_Plugins\SkriftDemo\Lang\en-US.xml" />
     <Content Include="Config\grid.editors.config.js" />
     <Content Include="Config\Lang\cs-CZ.user.xml" />
     <Content Include="Config\Lang\da-DK.user.xml" />
@@ -319,7 +326,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\SkriftConstants.cs" />
+    <Compile Include="Controllers\Api\SkriftAnimalsController.cs" />
+    <Compile Include="Controllers\Api\SkriftAnimalsTreeController.cs" />
+    <Compile Include="Controllers\Api\SkriftPokemonController.cs" />
+    <Compile Include="Controllers\Api\SkriftPokemonTreeController.cs" />
+    <Compile Include="Models\Animals\SkriftAnimal.cs" />
+    <Compile Include="Models\Animals\SkriftAnimalsRepository.cs" />
+    <Compile Include="Models\Pokemon\SkriftPokemon.cs" />
+    <Compile Include="Models\Pokemon\SkriftPokemonKind.cs" />
+    <Compile Include="Models\Pokemon\SkriftPokemonRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trees\Actions\SkriftPokemonEvolveAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -350,6 +368,7 @@
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
+    <Content Include="App_Plugins\SkriftDemo\package.manifest" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -357,6 +376,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
