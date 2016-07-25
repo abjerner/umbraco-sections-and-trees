@@ -337,6 +337,7 @@
     <Compile Include="Models\Pokemon\SkriftPokemonKind.cs" />
     <Compile Include="Models\Pokemon\SkriftPokemonRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
     <Compile Include="Trees\Actions\SkriftPokemonEvolveAction.cs" />
   </ItemGroup>
   <ItemGroup>
